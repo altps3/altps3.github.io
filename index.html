@@ -1,3 +1,64 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTps3 Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #050505; 
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .btn {
+            width: 170px;
+            height: 150px;
+            background-color: #b3b3b3;
+            border: 3px solid #4a4a4a;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn img {
+            width: 100px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .btn-text {
+            color: #1a1a1a;
+            font-weight: bold;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="button-container">
+    <div class="btn" onclick="window.location.href='flashdumper/'">
+        <img src="dump.png" alt="Dump">
+        <div class="btn-text">DUMP</div>
+    </div>
+    <div class="btn" onclick="window.location.href='flashwriter/'">
+        <img src="flash.png" alt="Flash">
+        <div class="btn-text">FLASH</div>
+    </div>
+</div>
+</body>
 </html>
